@@ -1,0 +1,332 @@
+/* !!!!!!! INI CSS Navbar !!!!!*/
+.nav-wrapper  {	
+    background: rgb(19,121,210);
+  background: linear-gradient(90deg, rgba(19,121,210,1) 0%, rgba(89,158,222,1) 35%, rgba(101,160,214,1) 100%);
+    font-size: 14px;	
+  }
+  
+#editForm{
+    padding:20px;
+  }  
+
+#menu{	
+    width:90px;	
+  }	
+  
+#lbNav{	
+    font-size:30px; 	
+    color:white;	
+    margin-left:50px;	
+}	
+
+.container{	
+    width:100%;	
+   
+}	
+
+label#title-form{	
+       font-family: sans-serif;	
+       font-size: 30px;	
+       margin-left: 10%;	
+       text-align: center;	
+} 	
+  
+.row{
+      margin:10px;
+}
+  
+.txsize {
+      font-size: 15px;
+      color: black;
+}
+
+#edtNoId,#edtNPWP{
+      color: black;
+}
+  
+#lbtitle{
+      font-size:17px;
+      color:black;
+      margin:10px;
+}
+  
+.warning{
+      color:red;
+      font-size:15px;
+      font-style:italic;
+      margin-top:2px
+}
+  
+body {
+      background-color: #fff;
+      display: flex;
+       min-height: 100vh;
+       flex-direction: column;
+}
+    
+main {
+      flex: 1 0 auto;
+}
+  
+/* .responsive {
+      width: 100%;
+    max-width: 400px;
+    height: auto;
+} */
+
+.toast-container > .toast {
+    max-width: 1200px;
+    width: 90%;
+}
+
+#edtNoCib{
+    color: black; 
+    font-size: 30px;
+    font-weight:bold;
+}
+
+
+
+/* !!!!!!! INI CSS TAB DOKUMEN !!!!!*/
+#btnDokumen{
+    margin-top:0%;
+}
+
+#rowDokumen{
+    margin-left:20%;
+}
+#colDokumen{
+    margin-top:2%;
+}
+.label-notif{
+    font-size: 14px;font-style: italic;
+}
+.label-unggah{
+    font-size: 18px; 
+    color: black;
+    
+}
+#fileBrowse{
+    margin-left:-8%;
+}
+
+/* !!!!!!! INI CSS TAB AW !!!!!*/
+.card-action{
+    margin-top:3px;
+}
+
+#simpanAW{
+    text-decoration: underline;
+    margin-right:17px;
+    margin-bottom:20px;
+}
+
+.table{
+    background-color:#ECECEC;
+    width:90%;
+    margin:auto;
+}
+
+#row-aw{
+    margin:10px;
+}
+
+   label#txcib{
+       padding-left: 10px;
+       padding-right: 15px;
+       font-size: 25px;
+   }
+   
+   label#txagt{
+       margin-right: 30px;
+       font-size: 30px;
+   }
+   
+   span#txsize2 {
+       font-size: 25px;
+        }
+   
+   div#box {
+       /* border: 4px solid black; */
+       /* padding: 10px;
+       margin-bottom: 0px;
+       right: 0;
+       left: 0;
+       top: 0;
+       bottom: 0; */
+       }
+   
+   div#box2 {
+       /* border: 4px solid black; */
+       /* margin: auto; */
+       
+       }
+   
+   div#box3{
+       background-color: #F0FFF0;
+       }
+   
+   
+   div#box4 {
+           
+       /* border: 4px solid black; */
+       /* height: 87pc; */
+       padding: 30px;
+       /* background-color: #FFFAFA;
+       box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22); */
+         }
+   
+   div#box5{
+       border: 2px solid gray;
+       color: black;
+       padding: 2%;
+       margin-top: 3%;
+        }
+   
+   div#boxtitle{
+    background: rgb(161,223,255);
+background: linear-gradient(90deg, rgba(161,223,255,1) 0%, rgba(227,245,255,1) 43%, rgba(226,250,255,1) 100%);
+}
+   
+ 
+      
+   label#txaw{
+       font-size: 15px;
+       color: black;
+       font-style: italic;
+   }
+   
+   
+   div#btnext{
+       margin:50%;
+   }
+   
+  
+   label#title-form{
+        font-family: sans-serif;
+        font-size: 30px;
+        margin-left: 10%;
+        text-align: center;
+    } 
+   
+    *{
+       margin:0;
+       padding: 0;
+       box-sizing: border-box;
+   }
+   
+   
+   .bg{
+       background: #e3e3e3;
+       padding: 80px 0px;
+       font-family: 'Montserrat', sans-serif;
+   }
+   
+   .form-wrap{
+       position: relative;
+       box-shadow: rgba(221,230,237,0.4) 0px 3px 10px 0px;
+       background-color: white;
+   }
+   
+   /* #editForm{
+       padding: 50px 30px 30px 30px;
+   } */
+   
+   /* #editForm label{
+       text-transform: uppercase;
+       font-size: 12px;
+       font-weight: 600;
+   } */
+   
+   .form-control{
+       border:none;
+       padding:0px;
+       border-bottom: 2px solid #b5b5b5;
+       border-radius: 0px;
+   }
+   
+   .form-control:focus{
+       box-shadow: none;
+   }
+   
+   ::placeholder{
+     text-transform: capitalize;
+     font-size: 13px;
+     font-weight: 500;
+     color: #b5b5b5;
+   }
+   
+   
+   #p1,#p2,#p3,#p4,#p5,#p6,#p7,#p8,#p9,#p10,#p11,#p12,#p13,#p14,#p15 {
+       color: #ff0000;
+       font-size: 13px;
+       /* font-weight: 600; */
+   }
+   
+   
+   #datep {
+       display: none;
+   }
+
+.container-tabs{
+    background-color:#fff;width:auto;margin-top:8px;
+}
+
+.tabs{
+    background-color:#E6F1F9 !important; 
+    overflow-x: hidden !important; 
+}
+
+.tabs .tab a{
+    color: black !important;
+} /*Black color to the text*/
+
+.tabs .tab a:hover {
+    background-color:#D7E0E7 !important;
+    color: black !important;
+} /*Text color on hover*/
+
+.tabs .tab a.active {
+    background-color:#A8D7FF !important;
+    color:black !important;
+} /*Background and text color when a tab is active*/
+
+.tabs .indicator {
+    background-color: #155789 !important;
+} 
+
+/* ======== INI FOOTER ========= */
+.page-footer{
+    position:relative;
+    bottom:0;
+    left:0;
+  width:100%;
+  background: rgb(197,222,238);
+  background: linear-gradient(90deg, rgba(197,222,238,1) 0%, rgba(199,223,238,1) 35%, rgba(216,234,246,1) 100%);
+  flex-shrink: 0;
+  bottom: 0;
+  height:45px !important;
+  }
+  
+  .footer-copyright{
+  height:30px !important;
+  }
+  
+  #pfooter{
+  text-align:right;
+  color: white;
+  }
+  
+  .text-footer{
+  color: #1b374d;
+  font-size:15px;
+  }
+  
+  .black-text:hover{
+  text-decoration: underline;
+  /* color: #888888; */
+  }
+  
+  #p{
+  color: white;
+  }

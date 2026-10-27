@@ -1,0 +1,1 @@
+<?php namespace App\Models; use Illuminate\Database\Eloquent\Model; class Saving extends Model { protected $table = "mu_savings_account"; public $timestamps = false; public function member() { return $this->belongsTo(Member::class, "MEMBER_REGISTRY", "MEMBER_REGISTRY"); } }

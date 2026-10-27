@@ -1,0 +1,49 @@
+label#lbsize {
+    font-size: 15px;
+    color: black;
+     }
+    
+body{
+    background-color: #F8F8FF;
+}
+
+div#field {
+    /* border: 4px solid black; */
+    padding: 10px;
+    margin-bottom: 0px;
+    right: 0;
+    left: 0;
+    top: 0;
+    bottom: 0;
+}
+
+#edtSimpokok,#edtSimwajib{
+    
+}
+
+div#boxtitle{
+    background: rgb(161,223,255);
+    background: linear-gradient(90deg, rgba(161,223,255,1) 0%, rgba(227,245,255,1) 43%, rgba(226,250,255,1) 100%);
+}
+
+label#lbtitle{
+    font-size: 20px;
+    color: black;
+    margin-left: 10px;
+}
+.card#infocard{
+    background-color:#DEE7ED;
+    height:100px;
+    opacity: 90%;
+}
+#lbsaldo{
+    margin-top:5px;
+    font-size: 15px;
+    color: black;
+}
+#lbinfo{
+    
+    font-size: 20px;
+    color: black;
+    font-weight: bold;
+}

@@ -1,0 +1,74 @@
+#container {
+  padding-left: 300px;
+}
+
+#content {
+  padding: 20px;
+}
+
+@media only screen and (max-width : 992px) {
+  #container {
+    padding-left: 0px;
+  }
+}
+
+/* ul.sidenav li{
+            color: white;
+        } */
+
+/* BODY NAV */
+.side-nav {
+  background-color: #004782;
+}
+.side-nav ul li.active{
+  color: #FFFFFF !important;
+}
+
+.side-nav ul li:hover {
+   background-color: #156fd5 !important;
+}
+
+.side-nav li:hover {
+  background-color: #004782 !important;
+}
+/* LOGO NAV */
+.side-nav li.active {
+  background-color: #105fb8 !important;
+} 
+/* TULISAN NAV */
+.side-nav .collapsible-header{
+  color: #FFFFFF !important;
+}
+
+.side-nav .collapsible-header:hover{
+  color: #000000 !important;
+}
+
+/* TULISAN NAV ANAK*/
+.side-nav .collapsible-accordion a:hover{
+  color: #000000 !important;
+}
+
+.collapsible-body ul{
+  background-color: #004782 !important;
+}
+
+.collapsible-body ul li a{
+  color: #FFFFFF !important;
+}
+
+  #idImg{
+    width:40%;margin-top:10%;margin-left:30%;
+  }
+
+  #lbSbw{
+    font-size:30px;
+    margin-left:20%;
+    position:relative;
+    color: #FFFFFF;
+  }
+#lbUser{
+    font-size:20px;
+    margin-left:30%;
+    color: #FFFFFF
+}

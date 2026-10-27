@@ -1,0 +1,120 @@
+/* !!!!!!! INI CSS Navbar !!!!!*/
+.nav-wrapper  {	
+    background: rgb(19,121,210);
+  background: linear-gradient(90deg, rgba(19,121,210,1) 0%, rgba(89,158,222,1) 35%, rgba(101,160,214,1) 100%);
+    font-size: 14px;	
+  }
+
+#menu{	
+    width:90px;	
+  }	
+  
+#lbNav{	
+    font-size:30px; 	
+    color:white;	
+    margin-left:50px;	
+}	
+
+.container{	
+    width:100%;	
+   padding:40px 0;
+}	
+  
+.txsize {
+      font-size: 17px;
+      color: black;
+}
+  
+  
+.warning{
+      color:red;
+      font-size:15px;
+      font-style:italic;
+      margin-top:2px
+}
+  
+body {
+      background-color: #fff;
+      display: flex;
+       min-height: 100vh;
+       flex-direction: column;
+}
+    
+main {
+    flex: 1 0 auto;
+}
+
+/* ============== */
+#lbPemohon{
+    font-size: 25px; color: black;
+}
+
+#namaPemohon{
+    font-size: 25px; color: black;
+    text-decoration-line: underline;
+    font-weight:bold;
+}
+#p1{
+    color: #ff0000;
+    font-size: 17px;
+    text-align:center;
+}
+
+
+#fileBrowse{
+    margin-top:5px;
+}
+
+#btnDokumen{
+    margin-top:7px;
+}
+
+.row-input{
+    padding-top:15px;
+}
+
+.card-input{
+    padding:0 40px;
+    border:1px grey solid;
+    border-radius:5px;
+}
+
+.col-berkas{
+    margin-top:15px;
+}
+
+/* ======== FOOTER ========= */
+.page-footer{
+    position:relative;
+    bottom:0;
+    left:0;
+  width:100%;
+  background: rgb(197,222,238);
+  background: linear-gradient(90deg, rgba(197,222,238,1) 0%, rgba(199,223,238,1) 35%, rgba(216,234,246,1) 100%);
+  flex-shrink: 0;
+  bottom: 0;
+  height:45px !important;
+  }
+  
+  .footer-copyright{
+  height:30px !important;
+  }
+  
+  #pfooter{
+  text-align:right;
+  color: white;
+  }
+  
+  .text-footer{
+  color: #1b374d;
+  font-size:15px;
+  }
+  
+  .black-text:hover{
+  text-decoration: underline;
+  /* color: #888888; */
+  }
+  
+  #p{
+  color: white;
+  }

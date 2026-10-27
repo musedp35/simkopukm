@@ -1,0 +1,73 @@
+.nav-wrapper  {
+    background-color: #1e88e5   !important;
+    font-size: 14px;
+  }
+  
+#menu{
+  width:90px;
+}
+
+#lbNav{
+  font-size:30px; 
+  color:white;
+  margin-left:50px;
+}
+
+#cmbSearch{
+  margin-top:9px;
+  margin-right:auto;
+  background-color: #1e88e5;
+}
+
+#inputSearch{
+  margin-left:-30px;
+}
+
+.container{
+  width:100%;
+}
+
+.dropdown-button  {
+    background-color: #1976d2   !important;
+    font-size: 13px;
+
+  }
+label#title-form{
+     font-family: sans-serif;
+     font-size: 30px;
+     margin-left: 10%;
+     text-align: center;
+ } 
+td#red{
+  background-color:#BE0000;
+}
+td#yellow{
+  background-color:#D7B600;
+}
+
+/* ======== INI FOOTER ========= */
+
+.page-footer{
+  width:100%;
+  background-color:#A5D2FF !important;
+  flex-shrink: 0;
+  position: fixed;
+  bottom: 0;
+}
+
+.footer-copyright{
+  background-color:#1e88e5 !important;
+}
+
+#pfooter{
+  text-align:right;
+}
+
+.black-text:hover{
+  text-decoration: underline;
+  color: black;
+}
+
+#p{
+  color: black;
+}
