@@ -146,16 +146,16 @@ class MemberController extends BaseAdminController
         ]);
 
         $member->update([
-            'MEMBER_NO' => $request->input('MEMBER_NO'),
-            'MEMBER_NAME' => $request->input('MEMBER_NAME'),
-            'MEMBER_EMAIL' => $request->input('MEMBER_EMAIL'),
-            'ADDRESS_STAY' => $request->input('ADDRESS_STAY'),
-            'VILLAGE_ID' => $request->input('VILLAGE_ID'),
-            'DISTRICT_ID' => $request->input('DISTRICT_ID'),
-            'CITY_ID' => $request->input('CITY_ID'),
-            'MEMBER_STATUS_ID' => $request->input('MEMBER_STATUS_ID'),
+            'MEMBER_NO'          => $request->input('MEMBER_NO'),
+            'MEMBER_NAME'        => $request->input('MEMBER_NAME'),
+            'MEMBER_EMAIL'       => $request->input('MEMBER_EMAIL'),
+            'ADDRESS_STAY'       => $request->input('ADDRESS_STAY'),
+            'VILLAGE_ID'         => $request->input('VILLAGE_ID'),
+            'DISTRICT_ID'        => $request->input('DISTRICT_ID'),
+            'CITY_ID'            => $request->input('CITY_ID'),
+            'MEMBER_STATUS_ID'   => $request->input('MEMBER_STATUS_ID'),
             'BANKING_ACCOUNT_NO' => $request->input('BANKING_ACCOUNT_NO'),
-            'LOGTIME' => now()->format('Y-m-d H:i:s'),
+            'LOGTIME'            => now()->format('Y-m-d H:i:s'),
         ]);
 
         session()->flash('alert-success', 'Data member berhasil diperbarui.');

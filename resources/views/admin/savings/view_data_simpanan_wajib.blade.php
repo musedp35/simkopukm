@@ -11,10 +11,11 @@
         <table class="highlight">
             <thead><tr><th>#</th><th>Tgl Buka</th><th>No. Akun</th><th>Nama Anggota</th><th>No. Bukti</th></tr></thead>
             <tbody>
-                @forelse($rows ?? [] as $row)
+                @forelse(($rows ?? []) as $row)
+                    @php $row = (array) $row; @endphp
                     <tr>
                         <td>{{ $loop->iteration }}</td>
-                        <td>{{ date('d/m/Y', strtotime($row['DATE_REGISTRATION'] ?? $row['LOGTIME'] ?? '')) }}</td>
+                        <td>{{ $row['DATE_REGISTRATION'] ?? $row['LOGTIME'] ? date('d/m/Y', strtotime($row['DATE_REGISTRATION'] ?? $row['LOGTIME'])) : '-' }}</td>
                         <td>{{ $row['SAVINGS_ACCOUNT_NO'] ?? '-' }}</td>
                         <td>{{ $row['MEMBER_NAME'] ?? $row['SAVINGS_ACCOUNT_NAME'] ?? '-' }}</td>
                         <td>{{ $row['MEMBER_NO'] ?? '-' }}</td>

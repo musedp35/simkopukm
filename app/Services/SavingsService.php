@@ -625,16 +625,23 @@ class SavingsService
 
     public static function daftarPembukaanAkun(): array
     {
-        return DB::table('mu_savings_account as sa')
-            ->leftJoin('ma_member as m', 'm.MEMBER_REGISTRY', '=', 'sa.MEMBER_REGISTRY')
-            ->select(
-                'sa.SAVINGS_ACCOUNT_NO', 'sa.SAVINGS_PRODUCT_ID', 'sa.SAVINGS_BALANCE',
-                'sa.ACTIVE_ACCOUNT_ID', 'sa.LOGTIME as DATE_REGISTRATION',
-                'm.MEMBER_NAME as SAVINGS_ACCOUNT_NAME', 'm.MEMBER_NO',
-            )
-            ->orderBy('sa.SAVINGS_ACCOUNT_NO')
-            ->get()
-            ->toArray();
+        // Cast tiap row ke array asosiatif — karena join antar tabel
+        // kadang return stdClass nested (terutama via ->get()->toArray()
+        // di baris yang berisi null dari left join), dan view Blade
+        // butuh akses via $row['KEY'], bukan ->KEY.
+        return array_map(
+            fn ($r) => (array) $r,
+            DB::table('mu_savings_account as sa')
+                ->leftJoin('ma_member as m', 'm.MEMBER_REGISTRY', '=', 'sa.MEMBER_REGISTRY')
+                ->select(
+                    'sa.SAVINGS_ACCOUNT_NO', 'sa.SAVINGS_PRODUCT_ID', 'sa.SAVINGS_BALANCE',
+                    'sa.ACTIVE_ACCOUNT_ID', 'sa.LOGTIME as DATE_REGISTRATION',
+                    'm.MEMBER_NAME as SAVINGS_ACCOUNT_NAME', 'm.MEMBER_NO',
+                )
+                ->orderBy('sa.SAVINGS_ACCOUNT_NO')
+                ->get()
+                ->all()
+        );
     }
 
     // ===== Tagihan Jasa =====

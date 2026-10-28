@@ -328,8 +328,13 @@ class SavingController extends BaseAdminController
     public function cetakBKM()
     {
         $transID = (int) request('transID', 0);
-        $row = SavingsService::getApprovedTransaksi($transID);
-        $pdf = PdfService::generate('pdf.savings.bkm', ['row' => $row], 'BKM_' . ($row['TRANSACTION_NO'] ?? $transID));
+        $row = $transID ? SavingsService::getApprovedTransaksi($transID) : null;
+        // Guard: kalau transaksi tidak ditemukan, redirect ke list alih-alih
+        // crash dengan "array offset on null" di view PDF.
+        if (!$row) {
+            return redirect()->route('admin.savings.persetujuan')->with('alert-error', 'Transaksi tidak ditemukan untuk dicetak.');
+        }
+        $pdf = PdfService::generate('pdf.savings.bkm', ['row' => (array) $row], 'BKM_' . ($row['TRANSACTION_NO'] ?? $transID));
         return $pdf;
     }
 
@@ -339,8 +344,11 @@ class SavingController extends BaseAdminController
     public function cetakBKK()
     {
         $transID = (int) request('transID', 0);
-        $row = SavingsService::getApprovedTransaksi($transID);
-        return PdfService::generate('pdf.savings.bkk', ['row' => $row], 'BKK_' . ($row['TRANSACTION_NO'] ?? $transID));
+        $row = $transID ? SavingsService::getApprovedTransaksi($transID) : null;
+        if (!$row) {
+            return redirect()->route('admin.savings.persetujuan')->with('alert-error', 'Transaksi tidak ditemukan untuk dicetak.');
+        }
+        return PdfService::generate('pdf.savings.bkk', ['row' => (array) $row], 'BKK_' . ($row['TRANSACTION_NO'] ?? $transID));
     }
 
     /**
@@ -349,8 +357,11 @@ class SavingController extends BaseAdminController
     public function cetakBU()
     {
         $transID = (int) request('transID', 0);
-        $row = SavingsService::getApprovedTransaksi($transID);
-        return PdfService::generate('pdf.savings.bu', ['row' => $row], 'BU_' . ($row['TRANSACTION_NO'] ?? $transID));
+        $row = $transID ? SavingsService::getApprovedTransaksi($transID) : null;
+        if (!$row) {
+            return redirect()->route('admin.savings.persetujuan')->with('alert-error', 'Transaksi tidak ditemukan untuk dicetak.');
+        }
+        return PdfService::generate('pdf.savings.bu', ['row' => (array) $row], 'BU_' . ($row['TRANSACTION_NO'] ?? $transID));
     }
 
     /**
